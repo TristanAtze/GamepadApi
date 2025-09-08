@@ -1,17 +1,51 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<RootNamespace>GamepadApi</RootNamespace>
+		<!-- Target -->
 		<TargetFramework>net8.0-windows</TargetFramework>
 		<UseWindowsForms>false</UseWindowsForms>
-		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
-		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<Nullable>enable</Nullable>
 		<PlatformTarget>x64</PlatformTarget>
-		<LangVersion>preview</LangVersion>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<Deterministic>true</Deterministic>
+
+		<!-- Packaging -->
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
+		<!-- NuGet Metadata -->
+		<PackageId>GamepadApi</PackageId>
+		<Version>1.0.0</Version>
+		<Authors>Ben Sowieja</Authors>
+		<Company>Ben Sowieja</Company>
+		<Product>GamepadApi</Product>
+		<Description>.NET Gamepad API (XInput) with multi-pad support, deadzones, events and vibration.</Description>
+		<PackageTags>gamepad;controller;xinput;input;windows</PackageTags>
+		<PackageProjectUrl>https://github.com/YourGitHubUser/YourGitHubRepo</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/YourGitHubUser/YourGitHubRepo.git</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+
+		<!-- SourceLink -->
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<EmbedUntrackedSources>true</EmbedUntrackedSources>
+		<ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+
 		<AssemblyName>GamepadApi</AssemblyName>
 		<RootNamespace>GamepadApi</RootNamespace>
 	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="README.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
+	</ItemGroup>
 
 	<ItemGroup>
 		<Compile Include="Gamepad\**\*.cs" />
