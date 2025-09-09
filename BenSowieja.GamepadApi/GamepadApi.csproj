@@ -17,14 +17,13 @@
 
 		<!-- NuGet Metadata -->
 		<PackageId>GamepadApi</PackageId>
-		<Version>1.0.0</Version>
 		<Authors>Ben Sowieja</Authors>
 		<Company>Ben Sowieja</Company>
 		<Product>GamepadApi</Product>
 		<Description>.NET Gamepad API (XInput) with multi-pad support, deadzones, events and vibration.</Description>
 		<PackageTags>gamepad;controller;xinput;input;windows</PackageTags>
-		<PackageProjectUrl>https://github.com/YourGitHubUser/YourGitHubRepo</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/YourGitHubUser/YourGitHubRepo.git</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/TristanAtze/GamepadApi</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/TristanAtze/GamepadApi</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
