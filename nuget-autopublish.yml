@@ -3,7 +3,7 @@ name: nuget-autopublish-on-commit
 on:
   push:
     branches:
-      - master
+      - main
   workflow_dispatch: {}
 
 permissions:
